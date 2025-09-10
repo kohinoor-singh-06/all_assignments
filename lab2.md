@@ -14,7 +14,8 @@
 <img width="730" height="346" alt="Screenshot from 2025-09-10 22-01-16" src="https://github.com/user-attachments/assets/f0e5ae08-d6cc-4c90-88ea-5adf6471025d" />
 
 
-![image](<Screenshot from 2025-09-10 22-02-35.png>)
+<img width="500" height="124" alt="Screenshot from 2025-09-10 22-02-35" src="https://github.com/user-attachments/assets/a16ab040-a2b9-4c84-a436-23b8b3c1e468" />
+
 
 
 # 🔧 script 2
@@ -33,8 +34,10 @@ if [ $a=" kohinoor singh" ] && [ $b -lt 18 ]; then       -checking conditions an
 fi
 
 ```
-![image](<Screenshot from 2025-09-10 22-07-22.png>)
-![image](<Screenshot from 2025-09-10 22-09-59.png>)
+<img width="565" height="329" alt="Screenshot from 2025-09-10 22-07-22" src="https://github.com/user-attachments/assets/06bc469d-d2a9-4aba-b966-2e42db8e230f" />
+
+<img width="616" height="52" alt="Screenshot from 2025-09-10 22-09-59" src="https://github.com/user-attachments/assets/3de17930-b291-4aff-8916-4f82fe4e5a66" />
+
 
 
 ### 🔧 Q1 what is the purpose of #!/bin/bash at the top of the script
