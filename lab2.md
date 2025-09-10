@@ -10,8 +10,10 @@
 
  echo "My name is $name ansd I am $age year old."  - printing name and age
 ```
-#### OUTPUT
-![images](<Screenshot from 2025-09-10 22-01-16.png>)
+#### OUTPUt 
+<img width="730" height="346" alt="Screenshot from 2025-09-10 22-01-16" src="https://github.com/user-attachments/assets/f0e5ae08-d6cc-4c90-88ea-5adf6471025d" />
+
+
 ![image](<Screenshot from 2025-09-10 22-02-35.png>)
 
 
