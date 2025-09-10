@@ -45,7 +45,7 @@ more.
 
    – Select Version: Ubuntu
    #### output 
-   ![Image](img12.png)
+![Image](img12.png)
 ### 2 select the amount of ram
 #### output 
 ![Image](img13.png)
@@ -67,7 +67,7 @@ more.
 
    – Click Start to launch your system
 #### output :
- ![Image](img15(1).png)
+![Image](img15(1).png)
 
 
   - choose your iso file from your computer
