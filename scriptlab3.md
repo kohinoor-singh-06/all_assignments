@@ -1,7 +1,8 @@
 ## Factorial
 
 ### Code
-![Image](./images3/Factorialcode.png)
+<img width="707" height="655" alt="Screenshot from 2025-09-24 09-53-56" src="https://github.com/user-attachments/assets/133cb224-1793-47c6-9be6-4bf1bfed09eb" />
+
 
 ### Line by Line Explanation
 -  #!/bin/bash — Shebang. Tells the OS to run this script with /bin/bash (the Bash shell).
@@ -61,4 +62,4 @@
 - done — End of the for loop (finished processing all arguments).
 
 ### Output 
-![Image](./images3/Runfactorial.png)
+<img width="739" height="226" alt="Screenshot from 2025-09-24 09-53-35" src="https://github.com/user-attachments/assets/f55ce026-9542-4df5-b4bb-f1987dd7817b" />
