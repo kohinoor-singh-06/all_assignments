@@ -1,7 +1,8 @@
 ## Count_Lines_Words
 
 ### Code
-![image](<Screenshot from 2025-09-24 09-24-33.png>)
+<img width="659" height="491" alt="Screenshot from 2025-09-24 09-24-33" src="https://github.com/user-attachments/assets/765ef8eb-afc2-4692-91ef-a5eee0045d77" />
+
 
 ### Line By Line Explanation
 
@@ -57,7 +58,8 @@ This command prints the value of the words variable to the terminal, prefixed wi
 This command prints the value of the chars variable to the terminal, prefixed with the label "Characters: ".
 
 ### Output 
-![image](<Screenshot from 2025-09-24 09-24-14.png>)
+<img width="704" height="205" alt="Screenshot from 2025-09-24 09-24-14" src="https://github.com/user-attachments/assets/a6317a38-7ab2-4c10-8a2c-fb169f95a889" />
+
 
 
 
