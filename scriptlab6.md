@@ -4,7 +4,8 @@
     - concat "hello" "world" → joins them into one string.
     - cmp "a" "b" → checks if the two strings are equal.
 ### Code
-![Image](./images4/code2.png)
+<img width="754" height="552" alt="Screenshot from 2025-09-24 11-48-04" src="https://github.com/user-attachments/assets/e11d9155-f01b-40ac-a558-bad5e125fdf1" />
+
 ### Line By Line Explanation
 
 ```bash
@@ -90,4 +91,4 @@ case "$op" in
 -  Ends the case statement.
 
 ### Output 
-![Image](./images4/coderun2.png)
+<img width="852" height="207" alt="Screenshot from 2025-09-24 11-47-39" src="https://github.com/user-attachments/assets/9aa27a50-40e3-49b7-88df-c1e9f1fd9066" />
