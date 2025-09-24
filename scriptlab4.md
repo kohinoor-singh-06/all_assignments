@@ -1,7 +1,8 @@
 ## Print Numbers
 
 ### Code
-![image](<Screenshot from 2025-09-24 10-09-11.png>)
+<img width="289" height="217" alt="Screenshot from 2025-09-24 10-09-11" src="https://github.com/user-attachments/assets/24050dcf-9bc5-4b40-8512-9539f1c2f389" />
+
 
 ### Line by line Explanation
 
@@ -26,7 +27,8 @@ Inside the loop, this command prints the value of the current element to (your t
 This keyword marks the end of the for loop. Once the script has finished through all the elements in the array, it will exit the loop and continue with any code.
 
 ### Output
-![image](<Screenshot from 2025-09-24 10-08-11.png>)
+<img width="681" height="262" alt="Screenshot from 2025-09-24 10-08-11" src="https://github.com/user-attachments/assets/128a1990-d109-4937-873a-e473637fbdd2" />
+
 
 
 
