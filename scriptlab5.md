@@ -2,6 +2,7 @@
  - The script takes one filename as input and tells you whether the current user has read, write, and execute permissions on it.
 
 ### Code
+<img width="799" height="336" alt="Screenshot from 2025-09-24 11-24-44" src="https://github.com/user-attachments/assets/ae326732-b2ed-4cf9-bfd3-7b4152395ec1" />
 
 
 ### Line By Line Explanation
@@ -73,4 +74,5 @@ Usage: ./check_file_permission.sh <filename>
 - If executable → filename: executable;Else → filename: NOT executable.
 
 ### Output
-![Image](./images4/coderun1.png)
+<img width="799" height="336" alt="Screenshot from 2025-09-24 11-27-41" src="https://github.com/user-attachments/assets/ddfaa1b5-7ac5-4f5d-9f06-87cc02155e5c" />
+
