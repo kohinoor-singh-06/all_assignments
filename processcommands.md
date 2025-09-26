@@ -30,8 +30,16 @@ ps aux
 
 - "ps aux" It list all the running commands on system includinng system daemons
 
-#### Output: ![Image](./images5/psaux1.png)
-![Image](./images5/psaux2.png)
+#### Output: <img width="1347" height="1064" alt="Screenshot from 2025-09-27 00-54-15" src="https://github.com/user-attachments/assets/59c6ec8b-0157-458c-a67c-3e3f1b18e016" />
+
+<img width="1696" height="1028" alt="Screenshot from 2025-09-27 00-54-45" src="https://github.com/user-attachments/assets/b4a25297-1c53-4e66-8e60-6c1dab6ec8e9" />
+
+<img width="1984" height="1041" alt="Screenshot from 2025-09-27 00-55-28" src="https://github.com/user-attachments/assets/224f3021-37ce-465b-a7a5-1848affb386d" />
+
+<img width="1984" height="1041" alt="Screenshot from 2025-09-27 00-55-49" src="https://github.com/user-attachments/assets/146b0f0a-c5ae-48e5-8b2e-b1edab96663c" />
+
+
+
 
 - Useful for system monitoring, troubleshooting high CPU/memory usage, or finding PIDs.
 
@@ -45,7 +53,8 @@ pstree -p
 - It Helps understand parent-child relationships.
 
 #### Output:
-![Image](./images5/pstree.png)
+<img width="1990" height="892" alt="Screenshot from 2025-09-27 00-57-01" src="https://github.com/user-attachments/assets/67dcf5f6-7d5b-48a7-a397-f9ca86da08a9" />
+
 
 - Great for debugging orphan processes (An orphan process is a process whose parent has terminated (exited) while the child is still running.), or seeing how daemons and shells are linked.
 
@@ -62,7 +71,13 @@ top
     - Press h → help
 
 #### Output:
-![Image](./images5/top.png)
+<img width="391" height="83" alt="Screenshot from 2025-09-27 00-58-24" src="https://github.com/user-attachments/assets/57a39032-2a13-4a33-b82f-e150b5d644bd" />
+
+<img width="1336" height="1071" alt="Screenshot from 2025-09-27 00-58-38" src="https://github.com/user-attachments/assets/4e2380f8-af26-4aca-b389-aa36de61741d" />
+
+
+
+
 
 #### 4.(1) ⚡ Adjust Process Priority
 
@@ -73,80 +88,87 @@ nice -n 10 sleep 300 &
 ```
 
 - -n 10 → sets nice value = 10 (lower priority).
-- Background job [1] 9467 created.
+- Background job [1] 30085 created.
 
 #### Output:
-![Image](./images5/nice.png)
+<img width="554" height="87" alt="Screenshot from 2025-09-27 00-59-58" src="https://github.com/user-attachments/assets/fcbbdb08-6eac-404e-bb4d-dff5ae0dca38" />
+
 
 ####  (2) Change priority of running process
 
 ```bash
-renice -n -5 -p 9467
+renice -n -5 -p 30085
 ```
 
 - Used when you want critical tasks to run faster or background jobs to run slower.
 
 #### Output:
-![Image](./images5/renice.png)
+<img width="623" height="99" alt="Screenshot from 2025-09-27 01-01-31" src="https://github.com/user-attachments/assets/e41e8334-9395-4088-a9a4-9bb5c3a8de7c" />
+
 
 #### 5. 🧩 CPU Affinity (Bind Process to CPU Core)
 
 ```bash
-taskset -cp 9467
+taskset -cp 30085
 ```
 
 - It Shows CPU cores a process can use.
 
 #### Output:
-![Image](./images5/taskset1.png)
+<img width="623" height="99" alt="Screenshot from 2025-09-27 01-02-25" src="https://github.com/user-attachments/assets/d59d31c9-8fe7-4577-91e4-dafcf3673728" />
+
 
 - Restrict to core 1:
 
 ```bash
-taskset -cp 1 9467
+taskset -cp 1 30085
 ```
 
 ##### Output:
-![Image](./images5/taskset2.png)
+<img width="623" height="99" alt="Screenshot from 2025-09-27 01-02-46" src="https://github.com/user-attachments/assets/ec488f43-e7db-4272-a8b7-a2630dfd5dac" />
+
 
 - Useful in performance tuning, ensuring tasks run on specific cores.
 
 6. 📂 I/O Scheduling Priority
 
 ```bash
-ionice -c 3 -p 9467
-ionice -p 9467 (To Verify)
+ionice -c 3 -p 30085
+ionice -p 30085 (To Verify)
 ```
 
 -  Controls disk I/O priority of a process.
 - set pid 3050's IO scheduling class to idle
 
 #### Output:
-![Image](./images5/ionice.png)
+<img width="623" height="99" alt="Screenshot from 2025-09-27 01-03-55" src="https://github.com/user-attachments/assets/a95afd9e-de87-488d-bb83-9cbea017276e" />
+
 
 - Prevents background jobs (like backups) from slowing down disk access.
 
 #### 7. 📑 File Descriptors Used by a Process
 
 ```bash
-lsof -p 9467 | head -5
+lsof -p 30085 | head -5
 ```
 
 - It lists files opened by a process ie checks which files, sockets, or devices a process is using.
 
 #### Output:
-![Image](./images5/lsof.png)
+<img width="1199" height="293" alt="Screenshot from 2025-09-27 01-04-38" src="https://github.com/user-attachments/assets/0f59819d-dc5d-4d0e-a0df-24290f723053" />
+
 
 #### 8. 🐛 Trace System Calls of a Process
 
 ```bash
-strace -p 9467
+strace -p 30085
 ```
 
 - Attaches to a process and shows system calls.
 
 #### Output:
-![Image](./images5/sudostrace.png)
+<img width="719" height="101" alt="Screenshot from 2025-09-27 01-05-13" src="https://github.com/user-attachments/assets/79da2dae-ee9b-4e84-8118-ab0eab119b98" />
+
 
 - used in debugging programs by checking file, network, and system interactions.
 
@@ -165,7 +187,7 @@ sudo fuser -n tcp 8080
 #### 10. 📊 Per-Process Statistics
 
 ```bash
-pidstat -p 9467 2 3
+pidstat -p 30085 2 3
 ```
 
 - It displays detailed CPU usage for a process over time.
@@ -173,7 +195,8 @@ pidstat -p 9467 2 3
     - 3 = number of reports
 
 #### Output:
-![Image](./images5/pidstat.png)
+<img width="898" height="146" alt="Screenshot from 2025-09-27 01-06-17" src="https://github.com/user-attachments/assets/6b09b2f1-30a4-417d-971c-0fc5a008c23d" />
+
 
 - It is usually considered better than top when monitoring one specified process
 
@@ -188,7 +211,8 @@ sudo cgcreate -g cpu,memory:/testgroup
 ```
 
 #### Output:
-![Image](./images5/cg.png)
+<img width="1989" height="820" alt="Screenshot from 2025-09-27 01-08-05" src="https://github.com/user-attachments/assets/60192445-f4a0-4fce-aae1-462e5a3155a6" />
+
 
 2. Limit CPU and Memory:
 
@@ -200,17 +224,21 @@ sudo cgcreate -g cpu,memory:/testgroup
 mount | grep cgroup
 ```
 
+<img width="1064" height="85" alt="Screenshot from 2025-09-27 01-09-17" src="https://github.com/user-attachments/assets/e2551372-e0ca-480e-8af4-473635147bfc" />
+
 #### Example:
-![Image](./images5/V2.png)
+
 - My system is running on cgroup v2
 
 ```bash
 echo "50000 100000" | sudo tee /sys/fs/cgroup/testgroup/cpu.max
-echo 100M | sudo tee /sys/fs/cgroup/testgroup/memory.max
 ```
 
 #### Output:
-![Image](./images5/cpumemory.png)
+
+<img width="1064" height="97" alt="Screenshot from 2025-09-27 01-11-03" src="https://github.com/user-attachments/assets/8b636743-8f83-43bd-85ce-36ae723e2484" />
+
+
 
 - Add process (PID 3050) to cgroup:
 
@@ -219,6 +247,8 @@ echo 3050 | sudo tee /sys/fs/cgroup/cpu/testgroup/cgroup.procs
 ```
 
 #### Output:
-![Image](./images5/PID.png)
+
+<img width="1064" height="97" alt="Screenshot from 2025-09-27 01-11-52" src="https://github.com/user-attachments/assets/8b98195e-520d-40ac-94ed-db62782005fe" />
+
 
 - These commands enforce resource limits on a specific process by utilizing Linux Control Groups (cgroups).  The result is that the process identified by <PID> is placed into the testgroup cgroup, where it is immediately constrained to use a maximum of 50% of a single CPU core (by setting the cpu.max value to 50000 out of 100000) and is limited to 100 Megabytes (MB) of total memory (by setting the memory.max value). This practice is crucial for resource isolation, preventing a potentially runaway or resource-intensive process from consuming all available system resources and ensuring fair sharing among all running applications.
