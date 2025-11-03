@@ -89,6 +89,8 @@ nice -n 10 sleep 300 &
 
 - -n 10 → sets nice value = 10 (lower priority).
 - Background job [1] 30085 created.
+  - Alternatives to nice - chrt (Real-time Scheduling),systemd-run and schedtool 
+
 
 #### Output:
 <img width="554" height="87" alt="Screenshot from 2025-09-27 00-59-58" src="https://github.com/user-attachments/assets/fcbbdb08-6eac-404e-bb4d-dff5ae0dca38" />
