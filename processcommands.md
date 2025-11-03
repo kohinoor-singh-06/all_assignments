@@ -252,3 +252,13 @@ echo 3050 | sudo tee /sys/fs/cgroup/cpu/testgroup/cgroup.procs
 
 
 - These commands enforce resource limits on a specific process by utilizing Linux Control Groups (cgroups).  The result is that the process identified by <PID> is placed into the testgroup cgroup, where it is immediately constrained to use a maximum of 50% of a single CPU core (by setting the cpu.max value to 50000 out of 100000) and is limited to 100 Megabytes (MB) of total memory (by setting the memory.max value). This practice is crucial for resource isolation, preventing a potentially runaway or resource-intensive process from consuming all available system resources and ensuring fair sharing among all running applications.
+#### Summary Table:
+
+| Tool        | Focus                             | Alternative to        |
+|------------|-----------------------------------|------------------------|
+| chrt        | Real-time scheduling policies     | nice                   |
+| ionice      | I/O priority control              | (complementary)        |
+| taskset     | CPU affinity control              | (complementary)        |
+| cgroups     | Fine-grained resource management  | nice (more powerful)   |
+| systemd-run | systemd + cgroups resource mgmt   | nice                   |
+| schedtool   | Custom scheduling policies        | nice                   |
