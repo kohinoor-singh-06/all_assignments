@@ -16,9 +16,11 @@ if [ $a=" akshat" ] && [ $b -lt 18 ]; then       ---checking conditions and usin
 fi
 
 ```
-<img width="572" height="262" alt="Screenshot from 2025-09-08 01-07-53-1" src="https://github.com/user-attachments/assets/1abe1a0e-0415-4a98-b16d-d8bc5a835e64" />
+<img width="660" height="238" alt="Screenshot from 2025-11-14 16-51-58" src="https://github.com/user-attachments/assets/a156c5e9-84f8-4e35-b514-367ee5262b4e" />
 
-<img width="635" height="52" alt="Screenshot from 2025-09-08 01-11-20-1" src="https://github.com/user-attachments/assets/ea340feb-ddb8-4250-bf32-3038112feadd" />
+
+<img width="574" height="74" alt="Screenshot from 2025-11-14 16-54-50" src="https://github.com/user-attachments/assets/7f2df5dd-9c63-46e5-bef3-85a5d2ffa5cd" />
+
 
 
 ##  modified script
@@ -40,12 +42,14 @@ fi
 ```
 ## the difference between the original and modified script is that in the first one we check for fixed value and in the next case we check for all cases .
 
-<img width="554" height="235" alt="Screenshot from 2025-09-08 17-19-45" src="https://github.com/user-attachments/assets/28646ec1-faba-40c2-a799-3ac69e4c43b9" />
+<img width="586" height="259" alt="Screenshot from 2025-11-14 17-00-55" src="https://github.com/user-attachments/assets/1474cf67-6071-4173-af10-c73ef2332153" />
+
 
 
 ## checking with differnt examples
 #### output is :
-<img width="554" height="235" alt="Screenshot from 2025-09-08 17-19-45(1)" src="https://github.com/user-attachments/assets/fbf426f3-7035-46ca-8cfa-0de4e67c9d1f" />
+<img width="580" height="310" alt="Screenshot from 2025-11-14 17-01-39" src="https://github.com/user-attachments/assets/f34c67e0-1ae5-4648-8d7e-eb89109871ac" />
+
 
 
 ### Q1=differnce between $1,$@ and $# in bash?
