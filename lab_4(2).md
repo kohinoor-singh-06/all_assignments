@@ -3,9 +3,8 @@
 ## 1.⁠ ⁠Backup.sh Script
 
 Create a new file named backup.sh inside your project folder:
+<img width="734" height="627" alt="Screenshot from 2025-11-14 14-59-40" src="https://github.com/user-attachments/assets/da041487-37ce-4a20-94e8-cbb665c44508" />
 
-
-/home/kohinoorsingh/Screenshots/Screenshot from 2025-11-14 14-59-40.png
 ## 2. Make Script Executable
 
 Run the following command once:
@@ -17,10 +16,12 @@ chmod +x Backup.sh
 ## 3. Testing the script
 
 ### 1. Create some samples .txt files:
-/home/kohinoorsingh/Screenshots/Screenshot from 2025-11-14 14-57-16.png
+<img width="768" height="98" alt="Screenshot from 2025-11-14 14-57-16" src="https://github.com/user-attachments/assets/1ca59625-7597-4fb6-87eb-1ca619c74822" />
+
 ### 2. Run the script:
 ./backup.sh
-/home/kohinoorsingh/Screenshots/Screenshot from 2025-11-14 14-58-05.png
+<img width="743" height="54" alt="Screenshot from 2025-11-14 14-58-05" src="https://github.com/user-attachments/assets/63a5b4b3-3d06-4a89-ac80-ca9403da794e" />
+
 
 
 # LAB 5 (File backup and automation)
@@ -58,7 +59,8 @@ file2.txt
 ./Backup.sh
 
 ### Output
-/home/kohinoorsingh/Screenshots/Screenshot from 2025-11-14 14-58-52.png
+<img width="743" height="54" alt="Screenshot from 2025-11-14 14-58-52" src="https://github.com/user-attachments/assets/e413584b-8819-4e04-a077-f18b2178c8ec" />
+
 
 ## Extra Questions - 
 
